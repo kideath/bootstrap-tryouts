@@ -34,7 +34,7 @@
   </div>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light m-0 p-0">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light mt-0 mb-2 p-0">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mail.ru</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -87,24 +87,326 @@
             <a class="nav-link" href="#">Регистрация</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-primary btn-sm mt-1">Войти</button>
+            <!-- <button class="btn btn-primary btn-sm mt-1">Войти</button> -->
+            <a class="nav-link btn btn-primary btn-sm py-1 mt-1 text-white" href="#">Войти</a>
           </li>
         </ul>        
       </div>
     </div>
-  </nav>  
+  </nav>
 
-	<!-- START -->
-	<div class="container">
-	  <a class="btn btn-primary mt-3" href="#">LINK</a>
-	</div>
+  <!--CONTAINER-->
+  <div class="container-fluid mx-5">
+    <div class="row">
+
+      <div class="col-md-3">
+        <!-- HEADER, FOOTER, CENTERED -->
+        <div class="card shadow mb-2">
+          <div class="card-header bg-primary text-center text-white">
+            <i class="fas fa-at fa-2x text-warning"></i>
+            <span class="" style="font-size: 200%;">mail</span>
+            <span class="" style="font-size: 90%; opacity: 0.7;">| проект 
+              <span class="rounded bg-white text-primary p-1">VK</span>
+            </span>
+          </div>
+          <div class="card-body">
+              <!-- VERTICAL -->
+              <ul class="nav nav-pills flex-column mb-2">
+                <li class="nav-item">
+                  <a class="nav-link btn-light" href="#">Почта</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Облако</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Календарь</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ещё</a>
+                </li>
+              </ul>
+
+              <button class="btn btn-primary btn-block">Войти</button>
+              <button class="btn btn-outline-primary btn-block">Создать почту</button>
+          </div>
+        </div>
+
+        <!-- WEATHER WIDGET -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex justify-content-between row-hl mb-1">
+              <div class="item-hl"><a class="font-weight-bold text-dark" href="">Владимир</a></div>
+              <div class="item-hl"><a class="" href="">Подробнее</a></div>
+            </div>
+            <div>
+              <i class="fas fa-cloud-sun-rain fa-3x"></i>
+              <span class="font-weight-bold" style="font-size: 200%;">+17°</span>
+              <div class="d-inline-block ml-1">
+                <div class="">Вечером +16°</div>
+                <div class="">Ночью +13°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CURRENCY WIDGET -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex justify-content-between row-hl">
+              <div class="item-hl">
+                <i class="fas fa-dollar-sign align-top pt-1"></i>
+                <div class="d-inline-block">
+                  <div class="">56.48</div>
+                  <div class="text-success">+1.63 <i class="fas fa-caret-up"></i></div>
+                </div>
+              </div>
+
+              <div class="item-hl">
+                <i class="fas fa-euro-sign align-top pt-1"></i>
+                <div class="d-inline-block">
+                  <div class="">57.11</div>
+                  <div class="text-success"><small>+1.29 <i class="fas fa-caret-up"></i></small></div>
+                </div>
+              </div>
+              
+              <div class="item-hl">
+                <i class="fas fa-tint align-top pt-1"></i>
+                <div class="d-inline-block">
+                  <div class="">103.31</div>
+                  <div class="text-danger" style="font-size: 90%;">-3.75 <i class="fas fa-caret-down"></i></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- HOROSCOPE -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <!-- BUG ON SMALL SCREEN! -->
+            <!-- <div class="row m-1">
+              <img src="./img/04c956c6af70.svg" alt="" class="inline-block rounded bg-dark rounded p-2" style="width:36px;height:36px;">
+              <div class="d-inline-block ml-2">
+                <div class="font-weight-bold">Гороскоп</div>
+                <div class="">Будьте внимательны к близким, займитесь семейными делами...</div>
+              </div>
+            </div> -->
+
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl">
+                <img src="./img/04c956c6af70.svg" alt="" class="img-responsive inline-block bg-dark rounded p-2" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">Гороскоп</div>
+                <div class="">Будьте внимательны к близким, займитесь семейными делами...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GAME CATALOG -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="row m-1">
+              <img src="./img/5FAA4F.png" alt="" class="inline-block rounded" style="width:36px;height:36px;">
+              <div class="d-inline-block ml-2">
+                <div class="font-weight-bold">Каталог игр</div>
+                <div class="">Вам понравится</div>
+              </div>
+            </div>
+
+            <!-- <div class="d-flex flex-row row-hl">
+              <div class="item-hl">
+                <img src="./img/5FAA4F.png" alt="" class="inline-block rounded" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">Каталог игр</div>
+                <div class="">Вам понравится</div>
+              </div>
+            </div> -->
+
+            <div class="row m-1">
+              <img src="./img/FAA31D.png" alt="" class="inline-block rounded" style="width:36px;height:36px;">
+              <div class="d-inline-block ml-2">
+                <div class="font-weight-bold">Гильдия Героев</div>
+                <div class="">MMORPG</div>
+              </div>
+              <button class="btn btn-light ml-auto">Играть</button>
+            </div>
+
+            <div class="row m-1">
+              <img src="./img/107387.png" alt="" class="inline-block rounded" style="width:36px;height:36px;">
+              <div class="d-inline-block ml-2">
+                <div class="font-weight-bold" style="position: absolute;">Крушители подземелий</div>
+                <div class="" style="position:relative;top:15px;">Кликер</div>
+              </div>
+              <button class="btn btn-light ml-auto"  style="z-index:21;">Играть</button>
+            </div>
+
+            <div class="row m-1">
+              <img src="./img/0499F6.png" alt="" class="inline-block rounded" style="width:36px;height:36px;">
+              <div class="d-inline-block ml-2">
+                <div class="font-weight-bold">Warface</div>
+                <div class="">Экшен</div>
+              </div>
+              <div class="d-inline-block ml-auto">
+                <button class="btn btn-light ml-auto">Играть</button>
+              </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+
+        <!-- VK
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl" style="width:36px;height:36px;aspect-ratio: auto 36 / 36;">
+                <img src="./img/CEF98F.svg" alt="" class="img-responsive inline-block rounded p-2" style="width:36px;height:36px;aspect-ratio: auto 36 / 36;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">ВКонтакте</div>
+                <div class="">Вы могли пропустить</div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- VK -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl">
+                <img src="./img/CEF98F.svg" alt="" class="img-responsive inline-block rounded" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">ВКонтакте</div>
+                <div class="">Вы могли пропустить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ODNOKLASSNIKI -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl">
+                <img src="./img/8C26EF.svg" alt="" class="img-responsive inline-block rounded" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">Одноклассники</div>
+                <div class="">Подарки на любой вкус</div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        
+        <!-- CLOUD -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl">
+                <img src="./img/4B5CF0.svg" alt="" class="img-responsive inline-block rounded" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">Облако</div>
+                <div class="">Сохраните файлы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TV -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl">
+                <img src="./img/F59779.svg" alt="" class="img-responsive inline-block rounded" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">ТВ-программа</div>
+                <div class="">Что смотреть сегодня</div>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+        <!-- VK COMBO -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl">
+                <img src="./img/2090E6.svg" alt="" class="img-responsive inline-block rounded" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">VK Combo</div>
+                <div class="">Скидки на еду и такси</div>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+        <!-- YULA -->
+        <div class="card shadow mb-2">
+          <div class="card-body">
+            <div class="d-flex flex-row row-hl m-1">
+              <div class="item-hl">
+                <img src="./img/31772F.svg" alt="" class="img-responsive inline-block rounded" style="width:36px;height:36px;">
+              </div>
+              <div class="item-hl ml-3">
+                <div class="font-weight-bold">Юла</div>
+                <div class="">Бесплатные объявления</div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <div class="row mb-1">
+          <div class="col"><a class="btn btn-light" href="#">Политика конфиденциальности</a></div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
+            <a class="btn btn-light" href="#">О компании</a>
+
+            <!-- DISMISSIBLE POPOVER -->
+            <button id="popover1" class="btn btn-light" data-toggle="popover" data-placement="auto" data-trigger="focus" data-html="true" title="<ul class='nav nav-pills flex-column' style='border:1px;'><li class='nav-item'><a class='nav-link text-dark bg-white' href='#'>Помощь</a></li><li class='nav-item'><a class='nav-link text-dark bg-white' href='#'>Реклама</a></li><li class='nav-item'><a class='nav-link text-dark bg-white' href='#'>Мобильные приложения</a></li><li class='nav-item'><a class='nav-link text-dark bg-white' href='#'>Пользовательское соглашение</a></li></ul>">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+
+
     
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-  </script>
+      </div>
+
+
+
+
+
+
+      <div class="col-md-6">
+        BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA-BLA
+      </div>
+
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script>
+  // Init tooltips
+  //$('[data-toggle="tooltip"]').tooltip();
+
+  // Init Popover
+  $('[data-toggle="popover"]').popover();
+
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+</script>
 </body>
 </html>
