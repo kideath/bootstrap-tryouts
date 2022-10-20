@@ -16,7 +16,6 @@
   <section id="home-section" style="height: 880px;">
     <div class="dark-overlay">
       <div class="home-inner container">
-        123
       </div>
     </div>
   </section>
@@ -28,9 +27,9 @@
   </nav> -->
 
   <!-- navbar navbar-expand-sm navbar-light bg-white sticky-top py-4 -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top py-4" id="main-nav">
+  <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top py-3" id="main-nav">
 
-    <div class="container justify-content-center">
+    <div class="container ">
       <!-- <div class="d-flex justify-content-center bd-highlight mb-3">
         <div class="p-2 bd-highlight">Flex item</div>
         <div class="p-2 bd-highlight">Flex item</div>
@@ -41,34 +40,36 @@
       nav nav-pills justify-content-center
       navbar-nav ml-auto align-items-sm-center
       -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="#home" class="nav-link">ДОМОЙ</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">О НАС</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">ИСТОРИЯ</a>
-        </li>
-        <li class="nav-item">
-          <a href="#authors" class="nav-link">ГАЛЕРЕЯ</a>
-        </li>
-        <li class="nav-item">
-          <a href="#authors" class="nav-link">ДОСТИЖЕНИЯ</a>
-        </li>     
-        <!-- <li class="nav-item">
-          <a href="#authors" class="nav-link">ПОДРУЖКИ</a>
-        </li> -->
-      </ul>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link">ДОМОЙ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">О НАС</a>
+          </li>
+          <li class="nav-item">
+            <a href="#our-story" class="nav-link">ИСТОРИЯ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery-section" class="nav-link">ГАЛЕРЕЯ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#achievements" class="nav-link">ДОСТИЖЕНИЯ</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!--CONTENT SECTION-->
-  <section id="content" style="padding-top: 100px;">
+  <section id="content">
     
     <!--COUPLE SECTION-->
-    <section id="couple">
+    <section id="about" class="menu-padding">
 
       <div class="container">
         <div class="row">
@@ -95,7 +96,7 @@
                   <i class="fas fa-heart"></i>
                 </span>
               </div>
-            </div>                            
+            </div>
                   
             <!-- <p class="blurb animation fadeInLeft text-center animated" style="visibility: visible;">
               В день когда мы познакомились я понял, что нашел свою судьбу. Будь уверена, что тебя не отпущу, потому что ты – моя половинка, без которой моя жизнь не представляет смысла. Мне хочется прожить всю жизнь с тобой вместе, моя единственная и неповторимая.
@@ -126,7 +127,7 @@
                     
             <div class="his-her-name">
               <h2 class="text-center">ЮЛИЯ<span class="last-name">-&nbsp;прекрасная жена&nbsp;-</span></h2>
-            </div>                            
+            </div>
             
             <p class="text-center" style="visibility: visible;">
 Люблю тебя я нежно, безгранично,<br>
@@ -142,23 +143,25 @@
           </div>
         </div><!-- END OF ROW-->
       </div><!-- END OF CONTAINER-->
-    </section>
 
-    <div class="container">
+      <div class="container">
                
-      <!-- ROW-1 -->
-      <div class="row mt-5">
-        <!-- SECTION TITLE -->
-        <div class="col-sm-12 offset-md-3 col-md-6 text-center">
-          <p class="blurb animation fadeInLeft text-center animated" style="visibility: visible;">
-            В день когда мы познакомились я понял, что нашел свою судьбу. Будь уверена, что тебя не отпущу, потому что ты – моя половинка, без которой моя жизнь не представляет смысла. Мне хочется прожить всю жизнь с тобой вместе, моя единственная и неповторимая.
-          </p>
+        <!-- ROW-1 -->
+        <div class="row mt-5">
+          <!-- SECTION TITLE -->
+          <div class="col-sm-12 offset-md-3 col-md-6 text-center">
+            <p class="blurb animation fadeInLeft text-center animated" style="visibility: visible;">
+              В день когда мы познакомились я понял, что нашел свою судьбу. Будь уверена, что тебя не отпущу, потому что ты – моя половинка, без которой моя жизнь не представляет смысла. Мне хочется прожить всю жизнь с тобой вместе, моя единственная и неповторимая.
+            </p>
+          </div>
         </div>
       </div>
-    </div>    
+    </section>
+
+ 
 
     <!-- OUR STORY SECTION -->
-    <section id="our-story">
+    <section id="our-story" class="menu-padding">
       <div class="container">
                
         <!-- ROW-1 -->
@@ -171,8 +174,8 @@
                 НАША <i class="far fa-heart text-heart"></i> ИСТОРИЯ
               </h2>
             
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam notn bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae 
+              <p class="mt-3 mb-5">
+                Порой одна случайность может вырасти в целую череду событий. Валя и Юля до первой встречи не знали друг друга, не учились вместе, и у них не было общих знакомых. У них совпали желания любить и быть любимыми, вместе проводить время, дополнять друг друга. Ниже посмотрим, какие даты у этой парочки имеют значения и во что переросла та первая случайная встреча...
               </p>
             </div>
 
@@ -194,18 +197,11 @@
                 <!--PHOTO OVERLAY-->
                 <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
                 </div><!--END of PHOTO OVERLAY-->
-                                                            
+
                 <!--ICON LINK-->
                 <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                   <div class="alignment">
                     <div class="v-align center-middle">
-                            
-                      <a href="http://demo.dethemes.com/forever/versions/onepage/images/attachment-1.jpg" class="magnific-zoom" title="Our First Met">
-                        <div class="de-icon circle light medium-size inline">
-                          <i class="de-icon-zoom-in"></i>
-                        </div>
-                      </a>
-                                
                     </div>
                   </div>
                 </div><!--END of ICON LINK-->
@@ -228,7 +224,7 @@
         
         <div class="col-sm-12 col-md-4  animation delay1 fadeInRight animated" style="visibility: visible; ">
           <h3>НАША ПЕРВАЯ ВСТРЕЧА</h3>
-            <p>Мы встретились на Поклонной горе. Юля гуляла со свой подругой, а Валя со своим другом. Именно они и стали в итоге свидетелями на свадьбе - ведь изначально были свидетелями зарождения семьи. Чем запомнилась Юля? Молодая, симпатичная, ищущая любви. Каков был Валя? Юморной, разговорчивый и неизведанный...</p>                            
+            <p>Мы встретились на Поклонной горе. Юля гуляла со свой подругой, а Валя со своим другом. Именно они и стали в итоге свидетелями на свадьбе - ведь изначально были свидетелями зарождения семьи. Чем запомнилась Юля? Молодая, симпатичная, ищущая любви. Каков был Валя? Юморной, разговорчивый и неизведанный...</p>
         </div>    
         
         <div class="vertical-line"></div>
@@ -253,18 +249,11 @@
                                                           
               <!--ICON LINK-->
               <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                  <div class="alignment">
-                    <div class="v-align center-middle">
-                          
-                        <a href="http://demo.dethemes.com/forever/versions/onepage/images/attachment-9.jpg" class="magnific-zoom" title="Our First Dating">
-          <div class="de-icon circle light medium-size inline">
-              <i class="de-icon-zoom-in"></i>
-            </div>
-          </a>                                                 
-                                
-                        </div>
-                    </div>
-                </div><!--END of ICON LINK-->
+                <div class="alignment">
+                  <div class="v-align center-middle">
+                  </div>
+                </div>
+              </div><!--END of ICON LINK-->
 
             </div><!--END of PHOTO-ITEM-->
         </div>
@@ -276,7 +265,7 @@
                 <div class="month-year">08.08</div>
             </div>
             <div class="arrow-right"></div>
-            <div class="clearboth"></div>                          
+            <div class="clearboth"></div>
         </div>
         
         <div class="col-sm-12 col-md-4 order-1 offset-md-1 animation delay1 fadeInRight animated" style="visibility: visible;">
@@ -286,7 +275,7 @@
         
         <div class="vertical-line">
         </div>
-                                        
+
       </div><!-- END of STORY ROW-2 -->      
 
         <!-- STORY ROW-3-->
@@ -300,22 +289,15 @@
                   
               <!--PHOTO-->
                 <img src="./img/IMG_4369_masha_cr_cr.JPG" alt="" class="img-fluid hover-animation image-zoom-in">
-                            
+
                 <!--PHOTO OVERLAY-->
                 <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
                 </div><!--END of PHOTO OVERLAY-->
-                                                            
+
                 <!--ICON LINK-->
                 <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                   <div class="alignment">
                     <div class="v-align center-middle">
-                            
-                      <a href="http://demo.dethemes.com/forever/versions/onepage/images/attachment-1.jpg" class="magnific-zoom" title="Our First Met">
-                        <div class="de-icon circle light medium-size inline">
-                          <i class="de-icon-zoom-in"></i>
-                        </div>
-                      </a>
-                                
                     </div>
                   </div>
                 </div><!--END of ICON LINK-->
@@ -333,7 +315,7 @@
           </div>
           <div class="arrow-right"></div>
           <!-- <i class="fas fa-caret-right arrow-right"></i> -->
-          <div class="clearboth"></div>                     
+          <div class="clearboth"></div>
         </div>
         
         <div class="col-sm-12 col-md-4  animation delay1 fadeInRight animated" style="visibility: visible; ">
@@ -342,7 +324,7 @@
         </div>    
         
         <div class="vertical-line"></div>
-                                        
+
       </div><!-- END of STORY ROW-3-->
 
       <!-- STORY ROW-4-->
@@ -356,25 +338,18 @@
                 
               <!--PHOTO-->
                 <img src="./img/SAM_0035_vanya_rs.JPG" alt="" class="img-fluid hover-animation image-zoom-in">
-                          
+
                 <!--PHOTO OVERLAY-->
               <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
             </div><!--END of PHOTO OVERLAY-->
-                                                          
+
               <!--ICON LINK-->
               <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                  <div class="alignment">
-                    <div class="v-align center-middle">
-                          
-                        <a href="http://demo.dethemes.com/forever/versions/onepage/images/attachment-9.jpg" class="magnific-zoom" title="Our First Dating">
-          <div class="de-icon circle light medium-size inline">
-              <i class="de-icon-zoom-in"></i>
-            </div>
-          </a>                                                 
-                                
-                        </div>
-                    </div>
-                </div><!--END of ICON LINK-->
+                <div class="alignment">
+                  <div class="v-align center-middle">
+                  </div>
+                </div>
+              </div><!--END of ICON LINK-->
 
             </div><!--END of PHOTO-ITEM-->
         </div>
@@ -392,11 +367,11 @@
         <div class="col-sm-12 col-md-4 order-1 offset-md-1 animation delay1 fadeInRight animated" style="visibility: visible;">
           <h3>ПОЯВИЛСЯ ВАНЮША</h3>
             <p>Не успела Юля отойти от родов, как Валя проявил инициативу. Ваня получился очень большим ребенком - настоящий богатырь. Даже сейчас он самый большой в классе. Пришлось Юлиной спине не сладко. С ранних лет Ваня отличался хорошим аппетитом и повышенной активностью к познанию окружающего мира.</p>                            
-        </div>    
+        </div>
         
         <div class="vertical-line">
         </div>
-                                        
+
       </div><!-- END of STORY ROW-4 -->  
 
         <!-- STORY ROW-5-->
@@ -419,13 +394,6 @@
                 <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                   <div class="alignment">
                     <div class="v-align center-middle">
-                            
-                      <a href="http://demo.dethemes.com/forever/versions/onepage/images/attachment-1.jpg" class="magnific-zoom" title="Our First Met">
-                        <div class="de-icon circle light medium-size inline">
-                          <i class="de-icon-zoom-in"></i>
-                        </div>
-                      </a>
-                                
                     </div>
                   </div>
                 </div><!--END of ICON LINK-->
@@ -445,23 +413,23 @@
           <!-- <i class="fas fa-caret-right arrow-right"></i> -->
           <div class="clearboth"></div>                     
         </div>
-        
+
         <div class="col-sm-12 col-md-4  animation delay1 fadeInRight animated" style="visibility: visible; ">
           <h3>РОДИЛСЯ ИЛЮША</h3>
-            <p>Восстановившись после родов, пройдя восстановление спины и семь раз отмерив - Юля подарила этому миру Илюшу. Ему через многое пришлось пройти, но с другой стороны Валя с Юлей стараются компенсировать это массой впечатлений, которые ему дарят. Илюха заядлый хохотун, весельчак. У него есть чему поучиться взрослым. Из-за постоянного лечения не ходит в садик и занимается с мамой Юлей. А папа Валя очень хочет сьездить всей семьей с Илюшей на море.</p>                            
-        </div>    
-        
+            <p>Восстановившись после родов, пройдя восстановление спины и семь раз отмерив - Юля подарила этому миру Илюшу. Ему через многое пришлось пройти, но с другой стороны Валя с Юлей стараются компенсировать это массой впечатлений, которые ему дарят. Илюха заядлый хохотун, весельчак. У него есть чему поучиться взрослым. Из-за постоянного лечения не ходит в садик и занимается с мамой Юлей. А папа Валя очень хочет сьездить всей семьей с Илюшей на море.</p>
+        </div>
+
         <div class="vertical-line"></div>
-                                        
+
       </div><!-- END of STORY ROW-5-->
 
 
 
     </section>
 
-               
+
     <!-- GALLERY SECTION -->
-    <section id="gallery-section">
+    <section id="gallery-section" class="menu-padding">
       
       <div class="container">
         <!-- ROW-1 -->
@@ -480,7 +448,7 @@
             </div>
 
 
-            
+
 
           </div>
         </div> <!-- END of ROW-1 -->  
@@ -531,7 +499,7 @@
               <img src="./img/photo_2022-10-02_10-51-31_gallery_rs.jpg" alt="" class="img-fluid">
             </a>
           </div>
-        </div>  
+        </div>
         
         <div class="row mb-4">
           <div class="col-md-4">
@@ -559,27 +527,176 @@
       </div>
     </section>
 
+    <!-- ACHIEVMENTS -->
+    <section id="achievements" class="menu-padding">
+      <div class="container">
 
-<!-- -------------------------------------- -->
-<div class="container">
-  <div class="row">
-    <div class="offset-md-3 col-md-6">
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolores minima nihil deleniti, nulla libero hic repellendus reiciendis modi dolore esse at consequatur. Quae autem soluta assumenda illum impedit inventore error voluptatibus, facilis est architecto? Vero delectus at mollitia porro soluta, nam recusandae est eum enim voluptates itaque praesentium eveniet! Fuga quisquam voluptatibus perspiciatis veritatis dolores. Facilis tempora enim aut quia laboriosam maiores iure deleniti ipsa, porro facere ullam ad eveniet accusamus molestiae? Distinctio amet praesentium excepturi quis fugit placeat itaque aliquid ducimus aliquam, officiis fugiat odio est quam aperiam recusandae necessitatibus ipsam soluta eius rerum eligendi cum! Omnis ullam accusantium dignissimos error, repellendus ducimus nulla nihil, consectetur culpa harum eaque praesentium labore commodi aperiam perferendis eius cum facilis repellat corporis impedit beatae quia placeat est rem? Recusandae labore molestias a quo odit sed inventore in nesciunt sint, commodi non unde! Aperiam sed, provident suscipit ducimus explicabo corrupti debitis fuga quibusdam eius accusantium culpa, itaque cupiditate harum, sapiente odio? Doloremque maxime autem perspiciatis modi deleniti dolore repellendus nobis excepturi nihil iste debitis est quia voluptatibus distinctio, quidem aliquam tempora alias vel inventore eveniet praesentium nostrum omnis tenetur. Aliquam illum blanditiis odio temporibus maiores perferendis debitis ducimus, veritatis laborum voluptatibus laboriosam aut dolor qui asperiores non consequatur similique laudantium, accusamus sapiente. Dicta cum dolor iste at optio eos veritatis fugit deleniti ad nisi animi, veniam ipsa cumque voluptatibus! Fugiat tenetur praesentium, reprehenderit facilis placeat repellendus id recusandae nobis, debitis maiores odio nisi? Quam ut, quas ad sapiente qui at sit quos provident unde ipsam voluptas possimus hic, commodi laboriosam? Dolore temporibus iure obcaecati deleniti a dolorem fugit voluptatum ducimus sapiente nihil. Tempore, in voluptate? Neque accusamus sed similique omnis doloribus vel hic, tempore distinctio praesentium architecto harum excepturi voluptatibus at doloremque natus quia repudiandae aliquid facere voluptatum! Dignissimos eius corporis quam neque dolorem beatae fuga quaerat odio accusamus nobis ad minus impedit adipisci, perspiciatis enim sequi error harum recusandae magni exercitationem aperiam dolorum facere dolor. Blanditiis magnam illum, iure aliquam quia deleniti, architecto fugiat adipisci laboriosam nesciunt exercitationem ratione laborum asperiores nemo quibusdam officia ipsum voluptatibus ullam ipsam hic sit expedita. Labore doloremque non reiciendis unde est, placeat sapiente. Quis consectetur, minima saepe in ab architecto laudantium officiis repellendus veniam ea voluptatum culpa unde sint accusamus harum nihil aspernatur. Labore ipsum, veniam delectus quis voluptates saepe molestiae odio cupiditate? Sit, optio porro? Aspernatur qui labore laboriosam eius explicabo blanditiis at accusamus non natus facere illum vitae quasi repellendus id sunt, itaque quisquam officiis fugiat numquam sed reprehenderit modi! Laborum placeat tempora, illo eligendi voluptatum possimus sed dignissimos cumque fugiat ipsum ab saepe magni excepturi consequatur a neque repellendus? Consequuntur consectetur voluptatum illo quisquam quo minus animi. Vel architecto asperiores ducimus nesciunt ut doloribus illum quo, minima tempore magnam veritatis error unde libero distinctio quia esse alias reprehenderit voluptates aspernatur, doloremque iure sapiente adipisci cumque. Voluptates, eum quaerat necessitatibus asperiores, veniam sequi optio, ad laudantium et eius eaque illo veritatis porro esse suscipit repellat sed non provident quas. Rerum autem porro voluptas quibusdam velit quos vero, modi consequatur soluta ullam nisi. Maxime maiores quisquam libero recusandae, distinctio quae porro nisi iusto, aspernatur exercitationem labore sed. Fugiat voluptatum saepe non iusto rem dolore nihil esse! Fugit nihil optio provident et necessitatibus enim itaque, in voluptatibus esse ducimus iste iusto amet dolore quidem alias quia veniam cupiditate perferendis. Incidunt natus suscipit, fugiat ipsum dolore cupiditate nostrum inventore beatae, debitis ad, corrupti ex laborum. Odit nulla tenetur non reiciendis animi perferendis excepturi, itaque accusantium soluta doloremque corrupti temporibus labore voluptate repellat earum recusandae nemo deleniti praesentium! Consequatur officiis quidem, dolorem ullam voluptas, ratione, accusamus molestiae tenetur laborum maiores libero soluta quibusdam mollitia expedita alias quaerat beatae. Dolores necessitatibus consectetur maiores similique rerum, harum, ex molestias maxime in facere officia corrupti molestiae! Error praesentium, vero nobis optio sit corporis minus quibusdam voluptate doloremque distinctio ipsam, nemo rem, qui recusandae maxime? Reprehenderit facilis, in culpa cum eligendi illum atque sequi dolorem! Culpa quidem deleniti ab modi eveniet quasi veritatis quae ut doloribus reprehenderit ipsum, ratione sequi corrupti minima fugit enim quam iure, cumque obcaecati eaque suscipit placeat eum a! Eveniet, ab saepe ipsa ipsam odio dolores ipsum quidem veritatis quis asperiores, consequuntur eos reprehenderit. Minus qui eos fugiat numquam, saepe accusamus enim sunt velit voluptatem magni maiores eius. Ullam culpa repellendus fugiat natus facere et nostrum, maiores sit at perspiciatis atque eaque alias aliquid velit qui dicta veritatis neque facilis repellat assumenda temporibus illo eius. Voluptates asperiores eos nam aliquid, accusamus obcaecati officiis optio at, modi nulla sapiente, velit exercitationem quas autem error numquam laboriosam consectetur quae repellat esse earum odit facere recusandae magni? Quam dolore saepe at est iste, aperiam nam necessitatibus delectus voluptatem laborum mollitia libero quo ipsam. Quia similique corrupti est earum, laboriosam excepturi ullam explicabo odio rem fugiat tempora fugit sapiente rerum a maiores quae consequatur molestias deserunt reprehenderit accusamus non necessitatibus. In impedit debitis quia delectus placeat suscipit, adipisci nostrum explicabo, eum ea quidem ipsum consequuntur iusto dolorum ad optio sapiente atque possimus. Tempora quis at alias esse excepturi dolore perspiciatis ab autem. Ratione sed rem libero pariatur nemo id perspiciatis harum, maiores eum fugiat repudiandae debitis voluptatibus earum quia tempora provident aliquam tempore hic. Reiciendis beatae deserunt qui quidem minus ipsa repellat error molestiae assumenda quis nobis dolorum deleniti, aperiam voluptas nostrum nisi sint nulla dicta reprehenderit perferendis quam cupiditate quibusdam! Nisi quia suscipit ipsum sunt dolores non, ducimus voluptates veniam modi asperiores corporis esse? Eligendi doloribus saepe officiis quae aliquam sunt, earum voluptatum nemo ut doloremque sit dicta? Omnis doloremque culpa, itaque fugiat aperiam architecto fuga corporis. Sed et quos temporibus quam, sapiente quis soluta cumque amet in dolorum nisi ipsum veniam! Nisi pariatur inventore et error soluta natus debitis corrupti commodi fuga laboriosam, tenetur placeat officia libero est tempore eligendi harum distinctio nostrum repellat, atque quod doloribus quae consectetur? Quas accusamus neque consequuntur nesciunt dolor facilis sequi rerum ipsa minus maxime debitis modi, expedita accusantium laboriosam quos! Quis illo eligendi molestiae numquam laboriosam distinctio amet odit, doloremque incidunt!</div>
-    </div>
-  </div>
-</div>
+        <div class="row">
+          <!-- SECTION TITLE -->
+          <div class="col-sm-12 offset-md-2 col-md-8 text-center">
+            
+            <div class="section-title">
+              <h2>
+                НАШИ <i class="far fa-heart text-heart"></i> ДОСТИЖЕНИЯ 
+              </h2>
+            
+              <p class="mt-3 mb-5">
+                В ряде вопросов невозможно достичь успеха в одиночку - нужна совместная работа. Работа? А как еще назвать взаимовыручку, заботу, умение уступать. Но и награда того стоит - совместный досуг, радость результату, да и в конце концов с кем поделиться интересной историей, произошедший днём, как не со второй половинкой? 
+              </p>
+            </div>
+
+          </div>
+        </div> <!-- END of ROW-1 -->
+
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-comments fa-3x"></i>
+                <h3>Знакомы</h3>
+                С момента нашей первой встречи прошло уже <span id="meet_years"></span> лет и <span id="meet_days"></span> дней
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-glass-cheers fa-3x"></i>
+                <h3>Годовщина свадьбы</h3>
+                В этом году была <span id="wedding_years"></span> годовщина - <span id="wedding_name"></span> свадьба
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-building fa-3x"></i>
+                <h4>Испытание на прочность</h4>
+                Пережили 3 полноценных переезда + 1 в сьемную квартиру, 1 ремонт сделали и еще 1 ремонт - в процессе.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-walking fa-3x"></i>
+                <h3>Как далеко зашли</h3>
+                Интересно, но Валя и Юля так и не отдыхали вместе за границей. Самое дальнее, где они были вместе - Крым
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-danger text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-umbrella-beach fa-3x"></i>
+                <h3>На море</h3>
+                Последний раз вместе мы отдыхали <span id="sea_years"></span> лет назад - ездили в Крым, Сатеру
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-body">
+                <i class="fas fa-coffee fa-3x"></i>
+                <h3>Отдых</h3>
+                Удалось вырваться от дел и поехали с детьми в дом отдыха Акварель <br>- <span id="rest_months"></span> месяцев назад
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p> &copy;
+              <span id="year"></span> </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
   </section>  <!--END OF CONTENT SECTION-->
 
 
-    
-    
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    // Знаем друг друга
+    var meet_start = new Date("2006-06-26"),
+    cur_date   = new Date(),
+    meet_diff  = new Date(cur_date - meet_start),
+    meet_days  = meet_diff/1000/60/60/24,
+    meet_years  = Math.floor( meet_days/365 ); 
+    meet_days = Math.floor(meet_days - meet_years*365);
+
+    $('#meet_years').text(meet_years);
+    $('#meet_days').text(meet_days);
+
+    // Свадьба
+    var wedding_start = new Date("2008-08-08"),
+    wedding_diff  = new Date(cur_date - wedding_start),
+    wedding_days  = wedding_diff/1000/60/60/24,
+    wedding_years  = Math.floor( wedding_days/365 ); 
+
+    // https://komsml.cap.ru/action/activity/zags/godovschini-svadeb-i-ih-nazvaniya-po-godam
+    let wedding_names = ["", "ситцевая", "бумажная", "кожаная", "льняная", // 0 - 4
+      "деревянная", "чугунная", "медная", "жестяная", "фаянсовая", // 5 - 9
+      "розовый юбилей", "стальная", "никелевая", "кружевная", "агатовая", // 10 - 14
+      "стеклянная", "топазовая", "оловянная", "бирюзовая", "гранатовая", // 15 - 19
+      "фарфоровая", "опаловая", "бронзовая", "берилловая", "атласная", // 20 - 24
+      "серебряный юбилей", "нефритовая", "красная деревянная", "никелевая", "бархатная", // 25 - 29
+      "жемчужная", "смуглая", "медная", "каменная", "янтарная", // 30 - 34
+      "коралловая", "костяного фарфора", "муслиновая", "ртутная", "креповая", // 35 - 39
+      "рубиновый юбилей", "железная", "перламутровая", "фланелевая", "топазовая", // 40 - 44
+      "сапфировый юбилей", "лавандовая", "кашемировая", "аметистовая", "кедровая", // 45 - 49
+      "золотая"]; // 50
+
+    $('#wedding_years').text(wedding_years);
+    $('#wedding_name').text(wedding_names[wedding_years]);
+
+    var sea_start = new Date("2015-08-20"),
+    sea_diff  = new Date(cur_date - sea_start),
+    sea_days  = sea_diff/1000/60/60/24,
+    sea_years  = Math.floor( sea_days/365 );
+    $('#sea_years').text(sea_years); 
+
+    var rest_start = new Date("2022-01-20"),
+    rest_diff  = new Date(cur_date - rest_start),
+    rest_days  = rest_diff/1000/60/60/24,
+    rest_months  = Math.floor( rest_days/30 );
+    $('#rest_months').text(rest_months); 
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });    
+
   </script>
 </body>
 </html>
