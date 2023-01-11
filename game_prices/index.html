@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ИгроЦены</title>    
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h2>ИгроЦены - место, где собраны магазины по продаже игр.</h2>
+      <form>
+        <div class="input-group">
+          <input id="game" type="text" class="form-control" placeholder="Название игры">
+          <div class="input-group-btn">
+              <button class="btn btn-default" onclick="return false;"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+      <br/><br/>
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Название</th>
+            <th>Ссылка</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="table1"></tbody>
+      </table>
+    </section>
+    <!-- <div id="year"></div> -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+<script>
+  // Get the current year for the copyright
+  //$('#example').text(new Date().getFullYear());
+  // var year = new Date().getFullYear();
+  // var yearText = document.createTextNode(""+year);
+  // var yearDiv = document.getElementById("year");
+  // yearDiv.appendChild(yearText);
+
+  var tbodyEl = document.getElementById("table1");
+
+  for(let i=0; i < gamePricesData.length; i++) {
+    var tr = document.createElement("tr");
+    var tbIcon = document.createElement("td");
+    var tbLink = document.createElement("td");
+
+    var img = document.createElement("img");
+    var url = gamePricesData[i][0];
+    if (url.length>0 && !url.startsWith("http")) { url = "./img/" + url; }
+    img.setAttribute("src", url);
+    img.setAttribute("width", 24);
+    img.setAttribute("height", 24);
+    tbIcon.appendChild(img);
+
+    var a = document.createElement("a");
+    var elemText1 = document.createTextNode(gamePricesData[i][1]);
+    a.appendChild(elemText1);
+    a.setAttribute("href", gamePricesData[i][2]);
+    a.setAttribute("id", "item"+i);
+    tbLink.appendChild(a);
+
+    tr.appendChild(tbIcon);
+    tr.appendChild(tbLink);
+
+    tbodyEl.appendChild(tr);
+  }
+    
+
+</script>
+</body>
+</html>
