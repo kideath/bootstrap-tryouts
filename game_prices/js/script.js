@@ -18,13 +18,19 @@ const gamePricesData = [
     "https://psprices.com/region-ru/search/?platform=&dlc=show&q="
   ],
   [
-    "https://www.origin.com/favicon.ico",
-    "Origin",
-    "https://www.origin.com/rus/ru-ru/store",
-    "https://www.origin.com/rus/ru-ru/search?searchString="
+    "https://www.xbox.com/favicon.ico",
+    "Xbox Game Pass",
+    "https://www.xbox.com/ru-RU/xbox-game-pass/games#PCgames",
+    ""
+  ],  
+  [
+    "https://www.ea.com/assets/images/favicon.png",
+    "Electronic Arts",
+    "https://www.ea.com/ru-ru/games/library/pc-download",
+    ""
   ],
   [
-    "https://eu.shop.battle.net/favicon.ico",
+    "https://eu.shop.battle.net/static/favicon-32x32.png",
     "battle.net",
     "https://eu.shop.battle.net/ru-ru",
     ""
@@ -85,15 +91,15 @@ const gamePricesData = [
   ],
   [
     "http://muve.softclub.ru/favicon.ico",
-    "СофтКлаб MUVE",
-    "http://muve.softclub.ru/",
-    "http://muve.softclub.ru/pages/search?query="
+    "СофтКлаб digital",
+    "https://digital.softclub.ru/",
+    ""
   ],
   [
     "http://buka.ru/favicon.ico",
     "Бука",
-    "http://shop.buka.ru/",
-    ""
+    "https://shop.buka.ru/",
+    "https://shop.buka.ru/search?q="
   ],
   [
     "https://www.igromagaz.ru/favicon.ico",
@@ -126,29 +132,35 @@ const gamePricesData = [
     "http://steambuy.com/catalogue.php?q="
   ],
   [
+    "http://steampay.com/favicon.ico",
+    "STEAMPAY",
+    "http://steampay.com/",
+    "http://steampay.com/catalogue.php?q="
+  ],
+  [
     "https://playo.ru/favicon.ico",
     "PLAYO",
     "https://playo.ru/",
     "https://playo.ru/search/"
   ],
   [
-    "https://yuplay.ru/img/img/favicon.ico",
+    "https://www.yuplay.com/favicons/favicon-32x32.png",
     "YU PLAY",
-    "https://yuplay.ru/",
-    "https://yuplay.ru/products/search/?query="
+    "https://yuplay.com/",
+    "https://yuplay.com/products/search/?query="
   ],
-  [
-    "http://lozman-games.ru/favicon.ico",
-    "ЛОЦМАН",
-    "http://lozman-games.ru/catalog/digital-games/",
-    "http://lozman-games.ru/search/?q="
-  ],
-  [
-    "http://www.gzstore.ru/favicon.ico",
-    "GAMEZONE",
-    "http://www.gzstore.ru/",
-    "http://www.gzstore.ru/search/?q="
-  ],
+  // [
+  //   "http://lozman-games.ru/favicon.ico",
+  //   "ЛОЦМАН",
+  //   "http://lozman-games.ru/catalog/digital-games/",
+  //   "http://lozman-games.ru/search/?q="
+  // ],
+  // [
+  //   "http://www.gzstore.ru/favicon.ico",
+  //   "GAMEZONE",
+  //   "http://www.gzstore.ru/",
+  //   "http://www.gzstore.ru/search/?q="
+  // ],
   [
     "http://www.gamepark.ru/favicon.ico",
     "GamePark",
@@ -167,12 +179,12 @@ const gamePricesData = [
     "http://www.mvideo.ru/pc-igry-i-soft/pc-igry-91",
     "http://www.mvideo.ru/product-list-page?region_id=1&limit=12&q="
   ],
-  [
-    "https://good-steam.ru/favicon.ico",
-    "good-steam",
-    "https://good-steam.ru/catalog/",
-    ""
-  ],
+  // [
+  //   "https://good-steam.ru/favicon.ico",
+  //   "good-steam",
+  //   "https://good-steam.ru/catalog/",
+  //   ""
+  // ],
   [
     "https://cdns.kinguin.net/media/favicon/stores/1/favicon.png",
     "kinguin.net",
@@ -180,10 +192,10 @@ const gamePricesData = [
     "https://www.kinguin.net/catalogsearch/result/index/?q="
   ],
   [
-    "http://www.grabthegames.com/assets/images/favicon.ico",
+    "https://www.grabthegames.com/assets/images/favicon.ico",
     "GrabTheGames",
-    "http://www.grabthegames.com/deals-tracker.html",
-    "http://www.grabthegames.com/deals-tracker.html?sort=dealrating&q="
+    "https://www.grabthegames.com/",
+    ""
   ],  
   [
     "https://www.greenmangaming.com/static/favicon.ico",
@@ -192,7 +204,7 @@ const gamePricesData = [
     "https://www.greenmangaming.com/search/"
   ], 
   [
-    "dailyindiegame.png",
+    "./img/dailyindiegame.png",
     "DailyIndieGame",
     "https://www.dailyindiegame.com/",
     "https://www.dailyindiegame.com/site_list_search.html?search="
@@ -222,27 +234,107 @@ const gamePricesData = [
     "https://www.indiegala.com/store/search?type=games&page=1&key="
   ],  
   [
-    "gamesmailru_cr.png",
+    "./img/gamesmailru_cr.png",
     "игры@mail.ru",
     "https://games.mail.ru/play/download/",
     "https://games.mail.ru/play/download/?search="
   ],
   [
-    "",
+    "https://vgtimes.ru/img/apple-touch-icon-72x72b.png",
     "VGTimes",
     "https://vgtimes.ru/",
     ""
   ],
+  // [
+  //   "https://www.nd.ru/favicon.ico",
+  //   "Новый Диск",
+  //   "https://www.nd.ru/",
+  //   ""
+  // ],
   [
-    "http://nd.ru/favicon.ico",
-    "Новый Диск",
-    "http://nd.ru/",
+    "https://gamefarm.ru/wp-content/uploads/2017/04/logo-72.png",
+    "GAMEFARM",
+    "https://gamefarm.ru/",
+    "https://gamefarm.ru/?s="
+  ],
+  [
+    "https://gamerz.online/wp-content/uploads/2020/01/cropped-icons8-key-2-48-32x32.png",
+    "GamerZ",
+    "https://gamerz.online/",
+    "https://gamerz.online/#!digiseller/search?s="
+  ],
+  [
+    "https://www.allkeyshop.com/blog/wp-content/themes/aks-theme/assets/image/favicon-32x32.png",
+    "allkeyshop",
+    "https://www.allkeyshop.com/blog/daily-deals/",
+    "https://www.allkeyshop.com/blog/catalogue/search-"
+  ],
+  // [
+  //   "",
+  //   "Купить игру точка РУ",
+  //   "http://kupit-igru.ru/",
+  //   "http://kupit-igru.ru/advanced_search_result.php?x=0&y=0&keywords="
+  // ],
+
+  [
+    "https://ru.4game.com/favicon.ico",
+    "4game",
+    "https://ru.4game.com/singles/",
     ""
   ],
   [
-    "",
-    "Купить игру точка РУ",
-    "http://kupit-igru.ru/",
-    "http://kupit-igru.ru/advanced_search_result.php?x=0&y=0&keywords="
+    "https://gamerz.kz/favicon.ico",
+    "GamerZ.kz",
+    "https://gamerz.kz/downloads/category/pc-games/",
+    "https://gamerz.kz/?s="
   ],
+  [
+    "https://goodgame.kz/bitrix/templates/elektro_flat/favicon/favicon.ico",
+    "goodgame.kz",
+    "https://goodgame.kz/catalog/litsenzionnye_klyuchi_igr/",
+    "https://goodgame.kz/catalog/?q="
+  ],
+  [
+    "https://ggsel.net/favicon.svg",
+    "ggsel",
+    "https://ggsel.net/",
+    "https://ggsel.net/search?search="
+  ],
+  [
+    "https://www.igroshop.com/favicon.svg",
+    "IgroShop",
+    "https://www.igroshop.com/platforms-steam/",
+    "https://www.igroshop.com/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&dispatch=products.search&q="
+  ],
+  [
+    "https://market.rt.ru/favicon.ico",
+    "Игровой маркет Ростелеком",
+    "https://market.rt.ru/",
+    "https://market.rt.ru/catalog?s="
+  ],
+  [
+    "https://gamersbase.store/images/favicon.ico",
+    "GAMERS BASE от МТС",
+    "https://gamersbase.store/ru",
+    "https://gamersbase.store/ru/search/?isFullTextSearch=true&searchQuery="
+  ],
+  [
+    "https://rushbe.ru/favicon.ico",
+    "Rushbe от МТС",
+    "https://rushbe.ru/",
+    ""
+  ],  
+  [
+    "https://game-mag.ru/wp-content/uploads/2020/05/cropped-1-32x32.png",
+    "game-mag",
+    "https://game-mag.ru/",
+    "https://game-mag.ru/?product_cat=0&post_type=product&s="
+  ],
+  [
+    "https://www.gameray.ru/bitrix/templates/base/images/favicon.png",
+    "gameray",
+    "https://www.gameray.ru/",
+    ""
+  ],
+
 ]

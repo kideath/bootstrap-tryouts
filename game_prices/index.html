@@ -14,19 +14,14 @@
       <form>
         <div class="input-group">
           <input id="game" type="text" class="form-control" placeholder="Название игры">
-          <div class="input-group-btn">
-              <button class="btn btn-default" onclick="return false;"><i class="glyphicon glyphicon-search"></i></button>
-          </div>
         </div>
-      </form>
-      <br/><br/>
-      <table class="table">
+      </form>      
+      <table class="table table-sm table-striped mt-5">
         <thead>
           <tr>
             <th></th>
             <th>Название</th>
             <th>Ссылка</th>
-            <th></th>
           </tr>
         </thead>
         <tbody id="table1"></tbody>
@@ -51,24 +46,29 @@
   for(let i=0; i < gamePricesData.length; i++) {
     var tr = document.createElement("tr");
     var tbIcon = document.createElement("td");
+    var tbName = document.createElement("td");
     var tbLink = document.createElement("td");
 
     var img = document.createElement("img");
     var url = gamePricesData[i][0];
-    if (url.length>0 && !url.startsWith("http")) { url = "./img/" + url; }
+    //if (url.length>0 && !url.startsWith("http")) { url = "./img/" + url; }
     img.setAttribute("src", url);
     img.setAttribute("width", 24);
     img.setAttribute("height", 24);
     tbIcon.appendChild(img);
 
-    var a = document.createElement("a");
     var elemText1 = document.createTextNode(gamePricesData[i][1]);
-    a.appendChild(elemText1);
+    tbName.appendChild(elemText1);
+
+    var a = document.createElement("a");
+    var elemText2 = document.createTextNode(gamePricesData[i][2]);
+    a.appendChild(elemText2);
     a.setAttribute("href", gamePricesData[i][2]);
     a.setAttribute("id", "item"+i);
     tbLink.appendChild(a);
 
     tr.appendChild(tbIcon);
+    tr.appendChild(tbName);
     tr.appendChild(tbLink);
 
     tbodyEl.appendChild(tr);
