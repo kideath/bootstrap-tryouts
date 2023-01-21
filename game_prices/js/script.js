@@ -72,6 +72,12 @@ const gamePricesData = [
     "https://plati.ru/search/"
   ],
   [
+    "https://difmark.com/img/favicon/favicon-32x32.png",
+    "difmark - digital marketplace",
+    "https://difmark.com/ru",
+    "https://difmark.com/ru/products?name="
+  ],  
+  [
     "https://ru.gamersgate.com/favicon.ico",
     "GAMERSGATE",
     "https://ru.gamersgate.com/",
@@ -90,13 +96,13 @@ const gamePricesData = [
     "https://www.1c-interes.ru/search/index.php?s=Search&q="
   ],
   [
-    "http://muve.softclub.ru/favicon.ico",
+    "https://softclub.ru/favicon.ico",
     "СофтКлаб digital",
     "https://digital.softclub.ru/",
     ""
   ],
   [
-    "http://buka.ru/favicon.ico",
+    "https://shop.buka.ru/favicon.ico",
     "Бука",
     "https://shop.buka.ru/",
     "https://shop.buka.ru/search?q="
