@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+
+  <!--link rel="icon" type="image/x-icon" href="./img/favicon.ico"-->
+</head>
+<body>
+  <!-- MODAL REGISTER -->
+  <div class="modal fade" id="regModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" 
+      aria-labelledby="registerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title m-0 p-0">Total Commander</h6>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex position-relative">
+            <!--img src="..." class="flex-shrink-0 me-3" alt="..."-->
+            <h3 class=" flex-shrink-0 me-1"><i class="bi bi-floppy2-fill text-primary"></i></h3>
+            <div>
+              <h5 class="mt-0 mb-1">Total Commander, версия 10.00</h5>
+              <small><strong>Copyright &copy; 1993-2021 by Christian Ghisler - All Rights Reserved</strong></small>
+            </div>
+          </div>
+          <p><small>Вы имеете право опробовать эту условно-бесплатную программу<br>
+            в течении месяца, после чего должны либо зарегистрироваться,<br>
+            либо удалить её. Вы можете свободно распространять это ПО.<br>
+            Подробности вы можете узнать, нажав кнопку «О регистрации».<br>
+            После регистрации это окно выводиться не будет.
+          </small></p>
+          <div class="row">
+          </div>
+          <div class="d-flex">
+            <button type="button" class="btn btn-light me-2" style="width: 49%; border: 1px;">О программе</button>
+            <button type="button" class="btn btn-light" style="width: 49%">О регистрации</button>
+          </div>
+        </div>
+        <!-- FOOT-->
+        <div class="border text-center mb-3 mx-3"> <!-- class="modal-footer" -->
+          <p><strong>Нажмите кнопку № 1 для запуска программы</strong></p>
+          <div class="d-flex justify-content-center pb-1">
+            <button type="button" class="btn btn-light mx-1" data-bs-dismiss="modal" style="width: 25%">1</button>
+            <button type="button" class="btn btn-light mx-1" data-bs-dismiss="modal" style="width: 25%">2</button>
+            <button type="button" class="btn btn-light mx-1" data-bs-dismiss="modal" style="width: 25%">3</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+   <!-- NAVBAR -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">
+        <i class="bi bi-floppy2-fill"></i>
+        Total Commander (x64) 10.00 - НЕ ЗАРЕГИСТРИРОВАНО
+      </span>
+    </div>
+  </nav>
+
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!--li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Файлы</a>
+          </li-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Файлы
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Изменить атрибуты...</a></li>
+              <!--
+              <li><a class="dropdown-item list-group-item d-flex justify-content-between align-items-start" href="#">Упаковать</a></li>
+              -->
+              <li><a class="dropdown-item d-flex justify-content-between" href="#">
+                <span>Упаковать</span>
+                <span>Alt+F5</span>
+              </a></li>
+              <li><a class="dropdown-item d-flex justify-content-between" href="#">
+                <span>Распаковать</span>
+                <span>Alt+F9</span>
+              </a></li>
+              <li><a class="dropdown-item d-flex justify-content-between" href="#">
+                <span>Протестировать архив(ы)</span>
+                <span>Alt+Shift+F9</span>
+              </a></li>
+              <li><a class="dropdown-item" href="#">Сравнить по содержимому</a></li>
+              <li><a class="dropdown-item" href="#">Системные файловые ассоциации...</a></li>
+              <li><a class="dropdown-item" href="#">Внутренние ассоциации (только в ТС)...</a></li>
+              <li><a class="dropdown-item" href="#">Показать диалог свойств</a></li>
+              <li><a class="dropdown-item" href="#">Подсчитать занимаемое место</a></li>
+              <li><a class="dropdown-item" href="#">Групповое переименование</a></li>
+              <li><a class="dropdown-item" href="#">Комментарии к файлу...</a></li>
+              <li><a class="dropdown-item" href="#">Печать</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Разбить файл...</a></li>
+              <li><a class="dropdown-item" href="#">Собрать файлы...</a></li>
+              <li><a class="dropdown-item" href="#">Кодировать (MIME, UUE, XXE)...</a></li>
+              <li><a class="dropdown-item" href="#">Декодировать (MIME, UUE, XXE, BinHex)...</a></li>
+              <li><a class="dropdown-item" href="#">Посчитать CRC-суммы (CRC32, MD5, SHA)...</a></li>
+              <li><a class="dropdown-item" href="#">Проверить CRC-суммы (CRC32, MD5, SHA)</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item d-flex justify-content-between" href="#">
+                <span>Выход</span>
+                <span>Alt+F4</span>
+              </a></li>
+            </ul>
+          </li>          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Выделение
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Выделить группу...</a></li>
+              <li><a class="dropdown-item" href="#">Снять выделение группы...</a></li>
+              <li><a class="dropdown-item" href="#">Выделить всё</a></li>
+              <li><a class="dropdown-item" href="#">Снять всё выделение</a></li>
+              <li><a class="dropdown-item" href="#">Инвертировать выделение</a></li>
+              <li><a class="dropdown-item" href="#">Выделить файлы/папки по расширению</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Сохранить выделение</a></li>
+              <li><a class="dropdown-item" href="#">Восстановить выделение</a></li>
+              <li><a class="dropdown-item" href="#">Сохранить выделение в файл...</a></li>
+              <li><a class="dropdown-item" href="#">Загрузить выделение из файла...</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Копировать имена файлов в буфер</a></li>
+              <li><a class="dropdown-item" href="#">Копировать имена файлов с путями</a></li>
+              <li><a class="dropdown-item" href="#">Копировать содержимое всех колонок</a></li>
+              <li><a class="dropdown-item" href="#">Копировать все колонки (полные пути)</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Сравнить каталоги</a></li>
+              <li><a class="dropdown-item" href="#">Сравнить, скрыв одинаковые файлы</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Команды
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Дерево каталогов...</a></li>
+              <li><a class="dropdown-item" href="#">Поиск файлов...</a></li>
+              <li><a class="dropdown-item" href="#">Поиск файлов отдельным процессом...</a></li>
+              <li><a class="dropdown-item" href="#">Метка диска...</a></li>
+              <li><a class="dropdown-item" href="#">Информация о системе</a></li>
+              <li><a class="dropdown-item" href="#">Синхронизировать каталоги...</a></li>
+              <li><a class="dropdown-item" href="#">Избанные каталоги</a></li>
+              <li><a class="dropdown-item" href="#">Назад</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Открыть командную консоль</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Показать все файлы без подкаталогов</a></li>
+              <li><a class="dropdown-item" href="#">Открыть папку "Рабочий стол"</a></li>
+              <li><a class="dropdown-item" href="#">Диспетчер фоновой пересылки...</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Поменять местами панели (активные вкладки)</a></li>
+              <li><a class="dropdown-item" href="#">Получатель = Источнику</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Сеть
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Подключить сетевой диск...</a></li>
+              <li><a class="dropdown-item" href="#">Отключить сетевой диск...</a></li>
+              <li><a class="dropdown-item" href="#">Открыть общий доступ к каталогу...</a></li>
+              <li><a class="dropdown-item" href="#">Закрыть общий доступ к каталогу...</a></li>
+              <li><a class="dropdown-item" href="#">Показать ресурсы администратора</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Соединиться с FTP-сервером...</a></li>
+              <li><a class="dropdown-item" href="#">Новое FTP-соединение...</a></li>
+              <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Разорвать FTP-соединение...</a></li>
+              <li><a class="dropdown-item" href="#">Показывать скрытые файлы на сервере</a></li>
+              <li><a class="dropdown-item" href="#">Загрузка по списку</a></li>
+              <li><a class="dropdown-item" href="#">Установить соединение через LPT/USB-порт...</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Вид
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Краткий</a></li>
+              <li><a class="dropdown-item" href="#">Подробный</a></li>
+              <li><a class="dropdown-item" href="#">Комментарии</a></li>
+              <li><a class="dropdown-item" href="#">Пользовательский набор колонок</a></li>
+              <li><a class="dropdown-item" href="#">Пользовательский стиль оформления</a></li>
+              <li><a class="dropdown-item" href="#">Дерево каталогов</a></li>
+              <li><a class="dropdown-item" href="#">Дерево в отдельной панели</a></li>
+              <li><a class="dropdown-item" href="#">Просмотр эскизов</a></li>
+              <li><a class="dropdown-item" href="#">Быстрый просмотр</a></li>
+              <li><a class="dropdown-item" href="#">Панели одна над другой</a></li>
+              <li><a class="dropdown-item" href="#">Новая вкладка для текуще папки</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Все файлы</a></li>
+              <li><a class="dropdown-item" href="#">Программы</a></li>
+              <li><a class="dropdown-item" href="#">*.*</a></li>
+              <li><a class="dropdown-item" href="#">Фильтр...</a></li>
+              <li><a class="dropdown-item" href="#">Показать только выделенные объекты</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">По имени</a></li>
+              <li><a class="dropdown-item" href="#">По типу</a></li>
+              <li><a class="dropdown-item" href="#">По дате/времени</a></li>
+              <li><a class="dropdown-item" href="#">По размеру</a></li>
+              <li><a class="dropdown-item" href="#">Без сортировки</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">В обратном порядке</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Обновить содержимое панели</a></li>
+            </ul>            
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Конфигурация
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Настройка...</a></li>
+              <li><a class="dropdown-item" href="#">Главная панель инструментов...</a></li>
+              <li><a class="dropdown-item" href="#">Вертикальная панель инструментов...</a></li>
+              <li><a class="dropdown-item" href="#">Редактировать файлы конфигурации</a></li>
+              <li><a class="dropdown-item" href="#">Тёмный&lt;-&gt;Обычный</a></li>
+              <li><a class="dropdown-item" href="#">Сохранить позицию</a></li>
+              <li><a class="dropdown-item" href="#">Сохранить настройки</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Запуск
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Изменить меню «Запуск»...</a></li>
+              <li><a class="dropdown-item" href="#">Изменить главное меню...</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <div class="d-flex" id="navbarNavEnd">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Справка
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item d-flex justify-content-between" href="#">
+                <span><i class="bi bi-question-circle-fill text-primary pe-1"></i>Содержание</span>
+                <span>F1</span>
+              </a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle-fill text-primary pe-1"></i>Горячие клавиши</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-question-circle-fill text-primary pe-1"></i>О регистрации</a></li>
+              <li><a class="dropdown-item" href="#">Посетить сайт программы</a></li>
+              <li><a class="dropdown-item" href="#">Проверить обновления...</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">О Total Commander...</a></li>
+            </ul>
+
+            <!--
+              <li><a class="dropdown-item d-flex justify-content-between" href="#">
+                <span>Упаковать</span>
+                <span>Alt+F5</span>
+              </a></li>
+            -->
+          </li>
+        </ul>
+      </div>
+
+      <!--form class="d-flex" role="search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form-->
+    </div>
+  </nav>
+
+
+
+  <!-- PANELS -->
+   <!-- text-center -->
+  <div class="container">
+    <!-- ICON-BUTTONS -->
+    <div class="d-flex flex-row mb-3">
+      <div class="p-2 text-success"><i class="bi bi-arrow-repeat"></i></div>
+      <div class="p-2"><i class="bi bi-grid-3x3-gap"></i></div>
+      <div class="p-2"></div>
+      <div class="p-2"></div>
+      <div class="p-2"><i class="bi bi-arrow-left"></i></div>
+      <div class="p-2"><i class="bi bi-arrow-right"></i></div>
+      <div class="p-2"></div>
+      <div class="p-2"><i class="bi bi-binoculars"></i></div>
+      <div class="p-2"></div>
+      <div class="p-2"></div>
+      <div class="p-2"></div>
+      <div class="p-2"></div>
+    </div>
+
+    <div class="row">
+      <!-- LEFT PANEL -->
+      <div class="col-sm-6" id="leftPanel">
+        <!--
+        <select class="form-select form-select-sm" size="3" aria-label="Size 3 select example">
+          <option selected>c:</option>
+          <option value="1">d:</option>
+          <option value="2">e:</option>
+        </select>
+        -->
+
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="#">springboot3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">totalcmd</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">kafka_2.13-3.0.2</a>
+          </li>
+        </ul>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">c:</a></li>
+            <li class="breadcrumb-item"><a href="#">sources</a></li>
+            <li class="breadcrumb-item"><a href="#">_my</a></li>
+            <li class="breadcrumb-item"><a href="#">bootstrap-tryouts</a></li>
+            <li class="breadcrumb-item active" aria-current="page">totalcmd</li>
+          </ol>
+        </nav>
+
+        <div style="height: 500px;">
+          <table class="table table-borderless table-hover table-sm text-start text-nowrap">
+            <thead>
+              <tr class="table-bordered">
+                <th scope="col" class="table table-bordered table-bordered">Имя</th>
+                <th scope="col">Тип</th>
+                <th scope="col">Размер</th>
+                <th scope="col">Дата</th>
+                <th scope="col">Атрибуты</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="bi bi-arrow-90deg-up"></i>[..]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>01.07.2024 16:51</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[css]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>30.06.2024 15:14</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[img]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>30.06.2024 12:45</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[js]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>30.06.2024 12:45</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-file-earmark"></i>index</td>
+                <td>html</td>
+                <td>9057</td>
+                <td>01.07.2024 17:06</td>
+                <td>-a--</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-file-earmark-text"></i>totalcmd_wip</td>
+                <td>txt</td>
+                <td>458</td>
+                <td>30.06.2024 17:06</td>
+                <td>-a--</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-file-word"></i>screen</td>
+                <td>docx</td>
+                <td>572228</td>
+                <td>30.06.2024 15:14</td>
+                <td>-a--</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-file-earmark-text"></i>todo</td>
+                <td>txt</td>
+                <td>27</td>
+                <td>30.06.2024 12:52</td>
+                <td>-a--</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <span class="text-start">0 Кб из 41 Кб, Файлов 0 из 2, папок 0 из 6</span>
+      </div>
+
+      <!--RIGHT PANEL -->
+      <div class="col-sm-6">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">kafka_2.13-3.0.2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Downloads</a>
+          </li>
+        </ul>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">c:</a></li>
+            <li class="breadcrumb-item"><a href="#">app</a></li>
+            <li class="breadcrumb-item active" aria-current="page">kafka_2.13-3.0.2</li>
+          </ol>
+        </nav>
+
+        <!-- table table-borderless table-hover table-sm text-start text-nowrap -->
+        <div style="height: 500px;">
+          <table class="table table-borderless table-hover table-sm text-start text-nowrap">
+            <thead>
+              <tr class="table-bordered">
+                <th scope="col" class="table table-bordered table-bordered">Имя</th>
+                <th scope="col">Тип</th>
+                <th scope="col">Размер</th>
+                <th scope="col">Дата</th>
+                <th scope="col">Атрибуты</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="bi bi-arrow-90deg-up"></i>[..]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>30.06.2024 15:18</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[bin]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>18.01.2023 13:36</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[config]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>18.01.2023 13:36</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[kafka-logs]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>30.06.2024 18:04</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[libs]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>18.01.2023 13:36</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[licenses]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>18.01.2023 13:36</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[logs]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>30.06.2024 18:04</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[site-docs]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>18.01.2023 13:36</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-folder"></i>[zookeeper-data]</td>
+                <td></td>
+                <td>Папка</td>
+                <td>18.01.2023 13:39</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-file-earmark"></i>LICENSE</td>
+                <td></td>
+                <td>14587</td>
+                <td>02.09.2022 17:41</td>
+                <td>-a--</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-file-earmark"></i>NOTICE</td>
+                <td></td>
+                <td>28184</td>
+                <td>02.09.2022 17:41</td>
+                <td>-a--</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>0 Кб из 573 Кб, Файлов 0 из 5, папок 0 из 3</div>
+      </div>
+    </div>
+
+    <div class="row align-items-center tc-grey">
+      <div class="col-4 text-end">
+        c:\sources\my\bootstrap-tryouts\totalcmd
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="searchFormControlInput1">
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="container">
+    <div class="d-flex justify-content-around">
+      <div class="p-2">F3 Просмотр</div>
+      <div class="p-2">F4 Правка</div>
+      <div class="p-2">F5 Копирование</div>
+      <div class="p-2">F6 Перемещение</div>
+      <div class="p-2">F7 Каталог</div>
+      <div class="p-2">F8 Удаление</div>
+      <div class="p-2">Alt+F4 Выход</div>
+    </div>
+  </div>
+  <!--div class="d-flex flex-row mb-3">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div-->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script>
+  // Init tooltips
+  //$('[data-toggle="tooltip"]').tooltip();
+
+  // Init Popover
+  //$('[data-toggle="popover"]').popover();
+
+  // Get the current year for the copyright
+  //$('#year').text(new Date().getFullYear());
+
+  var regModal = new bootstrap.Modal(document.getElementById('regModal'));
+  regModal.show();
+//  var myModalEl = document.getElementById('myModal')
+//myModalEl.addEventListener('hidden.bs.modal', function (event) {
+//  // сделайте что-нибудь...
+//})
+</script>
+</body>
+</html>
